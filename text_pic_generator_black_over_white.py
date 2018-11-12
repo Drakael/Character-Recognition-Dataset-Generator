@@ -3,7 +3,7 @@ import numpy as np
 import os
 import json
 
-char_list = 'abcdefghijklmnopqrstuvwxyzàâäéèêëîïôùûüœçABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/\\,.;:!?"\'’-_<>()[]{}|&*+=%$µ§°#~@£¤²` '
+char_list = 'abcdefghijklmnopqrstuvwxyzàâäéèêëîïôùûüæœçÀÂÄÉÈÊËÎÏÔÙÛÜÆŒÇABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/\\,.;:!?"\'’-_<>()[]{}|&*+=%$µ§°#~@£¤²`^ '
 with open('char_list_2.json', 'w') as outfile:
     json.dump(char_list, outfile)
 nb_classes = len(char_list)
